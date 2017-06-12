@@ -1,0 +1,93 @@
+<section id="one" class="wrapper style1">
+    <div class="one-abs">
+    <div class="inner">
+      <header class="major">
+        <h2>
+          Lecciones sugeridas 
+        </h2>
+        
+      
+  
+                
+        <!-- Portfolio Section
+        ================================================== -->
+        <section id="portfolio"> 
+          <div class="container-fluid"> <!-- Start Container -->
+            <div class="row"  *ngIf="lessons"> <!-- Start Row -->
+
+
+            <!--LiveClass-->
+                <div class="col-sm-4 col-md-4 col-lg-4 nopadding" *ngFor="let lesson of lessons.liveClasses; let i = index">
+
+                  <div class="small-box" [ngStyle]="{ 'background-image': 'url(' + lesson.img + ')'}" >
+                    <div class="hover-bg">
+                      <div class="timer-full">
+
+                        Inicio de clase en: <span> <oe-counter #counter></oe-counter></span> <span class="fa fa-play-circle" (click)="resetTime(lesson, i)"></span>
+                      </div>
+
+                      <img src="./assets/css/images/portfolio/small-box.png" alt="img" class="img-responsive">
+                      <div class="hover-text animated live-class">
+
+                        <div class="ptitle live-class">
+                          <a><h3>{{lesson.title}}</h3></a>
+                        </div>
+                        <p class="excerpt">{{lesson.description}}</p>
+                        
+                        <div class="card-bottom">
+                          <span class="fa fa-play-circle" (click)="resetTime(lesson, i)"></span>play
+                          
+                          <oe-likes [likes] = lesson.likes [ilike] = lesson.ilike></oe-likes>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div> 
+
+
+                </div> <!-- End LiveClass Column -->
+
+
+
+
+
+              <!-- Item Column -->
+              <div class="col-sm-4 col-md-4 col-lg-4 nopadding" *ngFor="let lesson of lessons.items; let i = index"> 
+
+
+                <div class="small-box" [ngStyle]="{ 'background-image': 'url(' + lesson.img + ')'}">
+                  <div class="hover-bg">
+
+                    <img src="./assets/css/images/portfolio/small-box.png" alt="img" class="img-responsive">
+                    <div class="hover-text animated">
+
+                      <div class="ptitle">
+                        <a ><h3>{{lesson.title}}</h3></a>
+                      </div>
+
+                      <p class="excerpt">{{lesson.description}}</p>
+
+                      <div class="card-bottom">
+                        <span class="fa fa-play-circle"></span>play
+                        
+                        <oe-likes [likes] = lesson.likes [ilike] = lesson.ilike></oe-likes>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div> <!-- End Item Column -->
+
+            </div> <!-- End Row -->
+          </div> <!-- End Container -->
+          <div class="clearfix"></div>
+        </section>
+        <!-- END Portfolio Section
+        ================================================== -->
+      
+      </header>
+    </div>
+    </div>
+  </section>

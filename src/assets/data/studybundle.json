@@ -1,0 +1,105 @@
+{
+  "liveClasses":[
+    {
+      "title":"Casual - Cash or Credit?",
+      "description":"Students will discuss vocabulary related to paying with cash or credit",
+      "type":"Casual Conversation",
+      "img":"./assets/css/images/portfolio/cash_credit.jpg",
+	  "likes": 532,
+	  "ilike": true,
+	  "startDate": "2017-07-11T10:20:30Z"
+    },
+    {
+      "title":"Classic - Photography",
+      "description":"Students will learn vocabulary related to photography",
+      "type":"Classic Instruction",
+      "img":"./assets/css/images/portfolio/photography.jpg",
+	  "likes": 223,
+	  "ilike": false,
+	  "startDate": "2017-07-01T10:20:30Z"
+    },
+    {
+      "title":"Private Class",
+      "description":"Some description for the private class",
+      "type":"Private Class",
+      "img":"./assets/css/images/portfolio/private_class.jpg",
+	  "likes": 451,
+	  "ilike": true,
+	  "startDate": "2017-06-22T10:20:30Z"
+    }
+  ],
+  "items":[
+    {
+      "title":"What is Your Address?",
+      "description":"In this lesson, you learn how to use numbers 11-100. You learn how to talk about your address.",
+      "type":"Lesson",
+      "img":"./assets/css/images/portfolio/address.jpg",
+	  "likes": 23,
+	  "ilike": true,
+      "status":"NOT_STARTED"
+    },
+    {
+      "title":"The Hotel",
+      "description":"In this lesson, you learn how to ask and answer questions.",
+      "type":"Lesson",
+      "img":"./assets/css/images/portfolio/hotel.jpg",
+	  "likes": 11,
+	  "ilike": true,
+      "status":"NOT_STARTED"
+    },
+    {
+      "title":"What is Your Phone Number?",
+      "description":"In this lesson, you learn how to use numbers 0-10. You learn how to say your phone number.",
+      "type":"Lesson",
+      "img":"./assets/css/images/portfolio/phone.jpg",
+	  "likes": 45,
+	  "ilike": true,
+      "status":"NOT_STARTED"
+    },
+    {
+      "title":"What is Your Email?",
+      "description":"In this lesson, you learn how to spell your name and talk about your email address.",
+      "type":"Lesson",
+      "img":"./assets/css/images/portfolio/email.jpg",
+	  "likes": 877,
+	  "ilike": false,
+      "status":"NOT_STARTED"
+    },
+    {
+      "title":"Weekend Edition",
+      "description":"Today\u0027s Headlines - Level 1",
+      "type":"Practice",
+      "img":"./assets/css/images/portfolio/weekend.jpg",
+	  "likes": 467,
+	  "ilike": true,
+      "status":"NOT_STARTED"
+    },
+    {
+      "title":"Word on the Street: Over the Hill",
+      "description":"Word on the Street: Level 1",
+      "type":"Practice",
+      "img":"./assets/css/images/portfolio/word_street.jpg",
+	  "likes": 2221,
+	  "ilike": false,
+      "status":"NOT_STARTED"
+    },
+    {
+      "title":"Disney: Journey Into Imagination",
+      "description":"A fascinating experience can open your mind to a whole new world.\n",
+      "type":"Practice",
+      "img":"./assets/css/images/portfolio/disney.jpg",
+	  "likes": 1,
+	  "ilike": true,
+      "status":"NOT_STARTED"
+    },
+    {
+      "title":"Acing Your Job Interview",
+      "description":"Christopher Glanzer shares some tips on how to be successful at job interviews.",
+      "type":"Practice",
+      "img":"./assets/css/images/portfolio/job_interview.jpg",
+	  "likes": 0,
+	  "ilike": false,
+      "status":"NOT_STARTED"
+    }
+  ]
+}
