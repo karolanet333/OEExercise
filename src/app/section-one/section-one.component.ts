@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Rx';
 import { Subscription } from 'rxjs/Subscription';
 import { StudyBundleReturn } from './../model/studybundle-return';
 import { StudyBundleService } from './../services/studyBundle.service';
-import { Component, OnInit, OnDestroy, ElementRef, ViewChildren, Renderer, QueryList } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChildren, QueryList } from '@angular/core';
 
 @Component({
   selector: 'oe-section-one',
@@ -14,10 +14,11 @@ import { Component, OnInit, OnDestroy, ElementRef, ViewChildren, Renderer, Query
 export class SectionOneComponent implements OnInit, OnDestroy {
 
   private subscrip: Subscription;
+  
   lessons: StudyBundleReturn;
   @ViewChildren('counter') counters:QueryList<CounterComponent>;
 
-  constructor(private studyBundleService: StudyBundleService, private rd: Renderer) { }
+  constructor(private studyBundleService: StudyBundleService) { }
 
   ngOnInit() {
     this.subscrip = this.studyBundleService.getJSON().subscribe(data => {

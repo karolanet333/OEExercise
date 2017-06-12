@@ -20,8 +20,8 @@
                       </span>
                     </div>
 
-                    <div class="col-sm-12 col-xs-4">
-                      <span class="counter js-counter" data-from="0" data-to="22070" data-speed="5000" data-refresh-interval="50">1</span>
+                    <div class="col-sm-12 col-xs-4" >
+                      <span *ngIf="socialInfo" class="counter js-counter" data-from="0" data-to="22070" data-speed="5000" data-refresh-interval="50">{{socialInfo.level}}</span>
                     </div>
                     
                     <div class="col-sm-12 col-xs-4">
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="col-sm-12 col-xs-4">
-                      <span class="counter js-counter" data-from="0" data-to="97" data-speed="5000" data-refresh-interval="50">1</span>
+                      <span *ngIf="socialInfo" class="counter js-counter" data-from="0" data-to="97" data-speed="5000" data-refresh-interval="50">{{socialInfo.unit}}</span>
                     </div>
                     
                     <div class="col-sm-12 col-xs-4">
@@ -59,7 +59,7 @@
                     </div>
                     
                     <div class="col-sm-12 col-xs-4">
-                      <span class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">1</span>
+                      <span *ngIf="socialInfo" class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">{{socialInfo.rewards}}</span>
                     </div>
                     
                     <div class="col-sm-12 col-xs-4">
@@ -78,7 +78,7 @@
                     </div>
 
                     <div class="col-sm-12 col-xs-4">
-                      <span class="counter js-counter" data-from="0" data-to="212023" data-speed="5000" data-refresh-interval="50">1</span>
+                      <span *ngIf="socialInfo" class="counter js-counter" data-from="0" data-to="212023" data-speed="5000" data-refresh-interval="50">{{socialInfo.friends}}</span>
                     </div>
                     
                     <div class="col-sm-12 col-xs-4">

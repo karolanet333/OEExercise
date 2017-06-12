@@ -18,7 +18,8 @@ export class SocialInfoService{
 
     public getJSON(): Observable<SocialInfo> {
          
-         return this.jsonReaderService.getJSON(this.jsonFile);
+         return this.jsonReaderService.getJSON(this.jsonFile)
+            .map((res:any) => SocialInfo.fromJson(res));
 
      }
 }
